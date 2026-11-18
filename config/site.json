@@ -1,0 +1,62 @@
+{
+  "businessName": "Barbearia Modelo",
+  "tagline": "Cuidado no detalhe. Agenda no seu tempo.",
+  "heroTitle": "Seu estilo. Seu tempo. Seu lugar na cadeira.",
+  "heroText": "Escolha o serviço, veja os horários livres e reserve em poucos passos. Sem espera, com atenção de verdade.",
+  "aboutText": "Um espaço feito para cuidar do visual com calma, técnica e conversa boa. Personalize este texto com a história da sua barbearia.",
+  "phoneCountryCode": "55",
+  "whatsappContact": "",
+  "ownerWhatsApp": "",
+  "address": "Endereço da barbearia — substitua antes de publicar",
+  "mapUrl": "",
+  "timeZone": "America/Sao_Paulo",
+  "currency": "BRL",
+  "locale": "pt-BR",
+  "logoPath": "/img/logo-barbearia.svg",
+  "heroImage": "/img/corte-em-atendimento.jpg",
+  "aboutImages": [
+    "/img/espaco-barbearia-01.jpg",
+    "/img/espaco-barbearia-02.jpg",
+    "/img/espaco-barbearia-03.jpg"
+  ],
+  "gallery": [
+    {"src": "/img/galeria-corte-01.jpg", "alt": "Exemplo de corte sendo realizado na barbearia", "caption": "Corte em andamento"},
+    {"src": "/img/galeria-corte-02.jpg", "alt": "Exemplo de atendimento de barbearia", "caption": "Detalhe do atendimento"},
+    {"src": "/img/corte-em-atendimento.jpg", "alt": "Exemplo de barbeiro trabalhando", "caption": "Técnica e cuidado"}
+  ],
+  "services": [
+    {"id": "corte", "name": "Corte", "description": "Máquina, tesoura ou combinação — do seu jeito.", "priceCents": 3500, "durationMinutes": 30, "active": true},
+    {"id": "barba", "name": "Barba", "description": "Acabamento alinhado e cuidado nos detalhes.", "priceCents": 2500, "durationMinutes": 30, "active": true},
+    {"id": "combo", "name": "Corte + barba", "description": "Um cuidado completo na mesma visita.", "priceCents": 5500, "durationMinutes": 60, "active": true},
+    {"id": "degrade", "name": "Degradê", "description": "Acabamento preciso com tempo reservado.", "priceCents": 4000, "durationMinutes": 45, "active": true}
+  ],
+  "barbers": [
+    {"id": "barbeiro-1", "name": "Barbeiro 1", "title": "Profissional demonstrativo", "photo": "/img/barbeiro-demo-01.jpg", "bio": "Troque pelo nome, especialidade e foto da sua equipe.", "active": true},
+    {"id": "barbeiro-2", "name": "Barbeiro 2", "title": "Profissional demonstrativo", "photo": "/img/barbeiro-demo-02.jpg", "bio": "Troque pelo nome, especialidade e foto da sua equipe.", "active": true}
+  ],
+  "testimonials": [
+    {"name": "Cliente demonstrativo", "rating": 5, "text": "Espaço para uma avaliação real, publicada com autorização.", "demo": true},
+    {"name": "Cliente demonstrativo", "rating": 5, "text": "Substitua por um depoimento verdadeiro da sua clientela.", "demo": true},
+    {"name": "Cliente demonstrativo", "rating": 5, "text": "Inclua apenas avaliações reais e autorizadas.", "demo": true}
+  ],
+  "hours": {
+    "mon": {"open": "09:00", "close": "19:00"},
+    "tue": {"open": "09:00", "close": "19:00"},
+    "wed": {"open": "09:00", "close": "19:00"},
+    "thu": {"open": "09:00", "close": "19:00"},
+    "fri": {"open": "09:00", "close": "19:00"},
+    "sat": {"open": "09:00", "close": "17:00"},
+    "sun": null
+  },
+  "slotIntervalMinutes": 30,
+  "bookingHorizonDays": 60,
+  "noShowGraceMinutes": 15,
+  "demoContent": true,
+  "colors": {
+    "ink": "#17191b",
+    "paper": "#f4efe7",
+    "accent": "#c66e43",
+    "accentDark": "#a8522e",
+    "sage": "#52634f"
+  }
+}

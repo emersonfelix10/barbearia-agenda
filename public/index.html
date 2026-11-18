@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17191b">
+  <meta name="description" content="Escolha um serviço, confira os horários livres e reserve seu atendimento na barbearia.">
+  <title>Barbearia Modelo — Agende seu horário</title>
+  <link rel="icon" href="/img/logo-barbearia.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/theme.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Início da barbearia">
+        <img class="brand__logo" src="/img/logo-barbearia.svg" alt="Logo demonstrativa da barbearia">
+        <span class="brand__text"><strong data-business-name>Barbearia Modelo</strong><small data-tagline>Cuidado no detalhe. Agenda no seu tempo.</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+        <a href="#sobre">A barbearia</a><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a><a href="#agendar">Agendar</a><a href="#contato">Contato</a>
+        <a class="button button--large button--copper nav-cta" href="#agendar">Agendar Agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Cuidado no detalhe · Hora marcada</p>
+        <h1 id="hero-title" data-hero-title>Seu estilo. Seu tempo. Seu lugar na cadeira.</h1>
+        <p class="hero__lead" data-hero-text>Escolha o serviço, veja os horários livres e reserve em poucos passos. Sem espera, com atenção de verdade.</p>
+        <div class="hero__actions"><a class="button button--copper button--large" href="#agendar">Agendar Agora <span aria-hidden="true">↗</span></a><a class="text-link" href="#servicos">Conhecer serviços <span aria-hidden="true">↓</span></a></div>
+        <div class="hero__note"><span class="hero__note-mark" aria-hidden="true">✦</span><span>Agenda simples, horário confirmado e atendimento sem correria.</span></div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-frame"><img id="hero-image" src="/img/corte-em-atendimento.jpg" alt="Barbeiro atendendo um cliente, foto demonstrativa" fetchpriority="high"></div>
+        <div class="hero__stamp"><span class="stamp-ring">DESDE O PRIMEIRO CORTE</span><strong>AGENDA<br>ABERTA</strong><span class="stamp-arrow" aria-hidden="true">↘</span></div>
+        <div class="hero__caption"><span>ATENDIMENTO COM HORA MARCADA</span><span>ESCOLHA SEU HORÁRIO</span></div>
+      </div>
+      <div class="hero__index" aria-hidden="true">01 <span>/</span> 08</div>
+    </section>
+
+    <section class="trust-strip" aria-label="Diferenciais">
+      <div class="trust-strip__inner"><span>Seu horário, sua escolha</span><i aria-hidden="true"></i><span>Equipe pronta para atender</span><i aria-hidden="true"></i><span>Agendamento direto na página</span></div>
+    </section>
+
+    <section class="about section-shell section-pad" id="sobre" aria-labelledby="about-title">
+      <div class="section-heading"><p class="eyebrow">01 / A casa</p><h2 id="about-title">Um bom corte começa<br><em>com atenção.</em></h2></div>
+      <div class="about__content"><p class="about__text" data-about-text>Um espaço feito para cuidar do visual com calma, técnica e conversa boa. Personalize este texto com a história da sua barbearia.</p><a class="text-link" href="#contato">Conheça o espaço <span aria-hidden="true">↘</span></a></div>
+      <div class="about__gallery" id="about-gallery" aria-label="Fotos demonstrativas do espaço"></div>
+    </section>
+
+    <section class="services section-pad" id="servicos" aria-labelledby="services-title">
+      <div class="section-shell">
+        <div class="section-heading section-heading--row"><div><p class="eyebrow">02 / Menu de serviços</p><h2 id="services-title">Escolha o seu<br><em>momento.</em></h2></div><p class="section-heading__aside">Valores de demonstração.<br>Edite antes de publicar.</p></div>
+        <div class="service-list" id="services-list" aria-live="polite"></div>
+        <p class="services__footnote">Duração aproximada; confirme detalhes com a equipe.</p>
+      </div>
+    </section>
+
+    <section class="gallery section-shell section-pad" id="galeria" aria-labelledby="gallery-title">
+      <div class="section-heading section-heading--row"><div><p class="eyebrow">03 / No detalhe</p><h2 id="gallery-title">Trabalho feito<br><em>com capricho.</em></h2></div><p class="section-heading__aside">Fotos ilustrativas.<br>Troque pelas suas.</p></div>
+      <div class="gallery-grid" id="gallery-grid" aria-label="Galeria demonstrativa de cortes"></div>
+    </section>
+
+    <section class="team section-pad" id="equipe" aria-labelledby="team-title">
+      <div class="section-shell">
+        <div class="section-heading section-heading--row"><div><p class="eyebrow">04 / Quem atende</p><h2 id="team-title">Mãos firmes.<br><em>Boa conversa.</em></h2></div><p class="section-heading__aside">Nomes e fotos demonstrativos.<br>Personalize sua equipe.</p></div>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+
+    <section class="booking section-pad" id="agendar" aria-labelledby="booking-title">
+      <div class="section-shell">
+        <div class="section-heading section-heading--row booking__heading"><div><p class="eyebrow">05 / Sua cadeira te espera</p><h2 id="booking-title">Marque seu<br><em>horário.</em></h2></div><p class="section-heading__aside">Escolha serviço, profissional<br>e um horário disponível.</p></div>
+        <div class="booking-layout">
+          <div class="booking-main">
+            <div class="booking-step"><span class="step-number">01</span><div class="step-body"><div class="step-heading"><h3>Qual serviço?</h3><span>Selecione uma opção</span></div><div class="choice-grid choice-grid--services" id="service-picker" role="group" aria-label="Escolha um serviço"></div></div></div>
+            <div class="booking-step"><span class="step-number">02</span><div class="step-body"><div class="step-heading"><h3>Com quem?</h3><span>Escolha o barbeiro</span></div><div class="choice-grid choice-grid--barbers" id="barber-picker" role="group" aria-label="Escolha um barbeiro"></div></div></div>
+            <div class="booking-step"><span class="step-number">03</span><div class="step-body"><div class="step-heading"><h3>Quando?</h3><span>Os horários ocupados não podem ser selecionados</span></div><div class="date-row"><label for="booking-date">Escolha o dia</label><input id="booking-date" type="date" required></div><div class="slot-legend"><span><i class="legend-dot legend-dot--free"></i> Livre</span><span><i class="legend-dot legend-dot--busy"></i> Ocupado</span></div><div class="slot-grid" id="slot-grid" role="group" aria-label="Horários disponíveis"><p class="slot-empty">Escolha primeiro serviço, barbeiro e dia.</p></div><p class="booking-status" id="availability-status" aria-live="polite"></p></div></div>
+            <div class="booking-step booking-step--last"><span class="step-number">04</span><div class="step-body"><div class="step-heading"><h3>Seus dados</h3><span>Para confirmar a reserva</span></div><form id="booking-form" class="booking-form">
+            <div class="form-grid"><label>Nome completo<input name="clientName" autocomplete="name" minlength="2" maxlength="100" required></label><label>WhatsApp<input name="clientPhone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" minlength="10" maxlength="24" required></label></div>
+              <label>Observação <span class="optional">(opcional)</span><textarea name="notes" rows="2" maxlength="400" placeholder="Alguma preferência para o atendimento?"></textarea></label>
+              <p class="privacy-note">Seu nome, telefone e detalhes do agendamento vão para o painel e o WhatsApp da barbearia. Se autorizar abaixo, também enviaremos lembretes ao seu número.</p>
+              <label class="consent-row"><input name="whatsappConsent" type="checkbox"><span>Autorizo receber confirmações e lembretes deste agendamento pelo WhatsApp. Posso marcar sem aceitar, mas não receberei os lembretes automáticos.</span></label>
+              <div class="booking-summary" id="booking-summary" hidden></div>
+              <button class="button button--copper button--large booking-submit" type="submit" disabled>Confirmar agendamento <span aria-hidden="true">↗</span></button>
+              <p class="form-note" id="whatsapp-note"></p><p class="booking-status" id="booking-status" aria-live="polite"></p>
+            </form></div></div>
+          </div>
+          <aside class="booking-side"><div class="side-card"><span class="side-card__mark" aria-hidden="true">✳</span><p class="eyebrow">SEM COMPLICAÇÃO</p><h3>Seu horário,<br>sem adivinhação.</h3><p>Os horários ocupados ficam sinalizados. Ao confirmar, a reserva entra na agenda e o horário deixa de aparecer como livre.</p><a href="#contato" class="text-link">Ficou com dúvida? <span aria-hidden="true">↗</span></a></div><div class="side-hours"><p class="eyebrow">HORÁRIOS DA CASA</p><div id="hours-list"></div></div></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section-shell section-pad" id="avaliacoes" aria-labelledby="reviews-title">
+      <div class="section-heading section-heading--row"><div><p class="eyebrow">06 / Quem já sentou na cadeira</p><h2 id="reviews-title">Palavra de<br><em>cliente.</em></h2></div><p class="section-heading__aside">Avaliações de exemplo.<br>Substitua por avaliações reais.</p></div>
+      <div class="reviews-grid" id="reviews-grid"></div>
+    </section>
+
+    <section class="contact section-pad" id="contato" aria-labelledby="contact-title">
+      <div class="section-shell contact__layout">
+        <div class="contact__copy"><p class="eyebrow">07 / Chegue tranquilo</p><h2 id="contact-title">A cadeira<br><em>fica por aqui.</em></h2><p class="contact__address" data-address>Endereço da barbearia — substitua antes de publicar</p><div class="contact__actions"><a class="button button--paper" id="map-link" href="#contato" target="_blank" rel="noopener" hidden>Ver no mapa <span aria-hidden="true">↗</span></a><a class="button button--outline" id="whatsapp-link" href="#contato" target="_blank" rel="noopener" hidden>Falar no WhatsApp</a><a class="button button--outline" href="#agendar">Agendar atendimento</a></div><p class="contact__placeholder" id="contact-placeholder">Edite endereço, mapa e telefone em <code>config/site.json</code>.</p></div>
+        <div class="contact__map" id="contact-map"><div class="map-placeholder"><span class="map-placeholder__pin" aria-hidden="true">⌖</span><strong>O mapa aparece<br>após configurar o endereço.</strong><span>Fácil de encontrar. Melhor de chegar.</span></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="section-shell footer-main"><a class="brand brand--footer" href="#inicio"><img class="brand__logo" src="/img/logo-barbearia.svg" alt=""><span class="brand__text"><strong data-business-name>Barbearia Modelo</strong><small data-tagline>Cuidado no detalhe. Agenda no seu tempo.</small></span></a><button class="admin-link" id="open-admin" type="button">Área do barbeiro <span aria-hidden="true">↗</span></button></div><div class="section-shell footer-bottom"><span>© <span id="year"></span> <span data-business-name>Barbearia Modelo</span></span><span>Fotos, preços e equipe de demonstração — personalize antes de publicar.</span><a href="#inicio">Voltar ao início ↑</a></div></footer>
+
+  <div class="mobile-booking-bar"><span>Agenda aberta</span><a class="button button--copper" href="#agendar">Agendar Agora <span aria-hidden="true">↗</span></a></div>
+
+  <dialog class="admin-dialog" id="admin-dialog" aria-labelledby="admin-dialog-title">
+    <div class="admin-dialog__top"><div><p class="eyebrow">ÁREA RESTRITA</p><h2 id="admin-dialog-title">Agenda da casa</h2></div><button type="button" class="icon-button" id="close-admin" aria-label="Fechar painel">×</button></div>
+    <div class="admin-dialog__content">
+      <section id="admin-setup-view" hidden><p class="admin-intro">Primeiro acesso: valide o token de configuração do servidor e crie a conta do responsável.</p><form id="admin-setup-form" class="admin-form"><label>Token de configuração<input name="setupToken" type="password" autocomplete="off" required></label><label>Seu nome<input name="name" autocomplete="name" required maxlength="80"></label><label>E-mail<input name="email" type="email" autocomplete="email" required></label><label>Senha (mínimo 12 caracteres)<input name="password" type="password" autocomplete="new-password" minlength="12" required></label><button class="button button--copper" type="submit">Criar acesso administrador</button><p class="admin-message" id="setup-message" aria-live="polite"></p></form></section>
+      <section id="admin-login-view" hidden><p class="admin-intro">Entre para acompanhar as reservas e atualizar a presença dos clientes.</p><form id="admin-login-form" class="admin-form"><label>E-mail<input name="email" type="email" autocomplete="username" required></label><label>Senha<input name="password" type="password" autocomplete="current-password" required></label><button class="button button--copper" type="submit">Entrar</button><p class="admin-message" id="login-message" aria-live="polite"></p></form></section>
+      <section id="admin-panel-view" hidden><div class="admin-panel__bar"><p class="admin-intro" id="admin-welcome">Suas próximas reservas.</p><button type="button" class="text-link" id="admin-logout">Sair da conta</button></div><div class="admin-panel__controls"><label for="admin-date">Dia da agenda</label><input id="admin-date" type="date"><button type="button" class="button button--dark button--small" id="refresh-admin">Atualizar</button></div><div class="admin-message" id="admin-message" aria-live="polite"></div><div class="admin-appointments" id="admin-appointments"></div><p class="admin-footnote" id="admin-wa-status"></p></section>
+    </div>
+  </dialog>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <noscript>Para carregar horários livres e confirmar uma reserva, habilite JavaScript no navegador.</noscript>
+</body>
+</html>

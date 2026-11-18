@@ -1,0 +1,22 @@
+{
+  "name": "barbearia-agenda-onepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Homepage única responsiva com agendamento, painel local e integração configurável com WhatsApp Cloud API.",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node --check src/server.js && node --check src/database.js && node --check src/auth.js && node --check src/appointments.js && node --check src/whatsapp.js && node --check src/scheduler.js && node --check public/app.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "luxon": "^3.7.2",
+    "sql.js": "^1.13.0"
+  }
+}
